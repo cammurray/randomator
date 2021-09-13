@@ -28,8 +28,38 @@ I created this library as for one of my projects, I needed to have random "user"
 
 # How to use
 
-Generate a random identity
+## Random Identity
 
 `RandomPerson RandomPerson = new RandomPerson();`
 
+## Random Location
 
+Anywhere
+
+`RandomLocation RandomLocation = new RandomLocation();`
+
+In specified country
+
+`RandomLocation RandomLocation = new RandomLocation("Australia");`
+
+In specified country, city
+
+`RandomLocation RandomLocation = new RandomLocation("Australia", "Sydney");`
+
+## Random Phone
+
+Landline, anywhere.
+
+`RandomPhone RandomPhone = new RandomPhone(RandomPhoneType.Land);`
+
+Mobile, anywhere.
+
+`RandomPhone RandomPhone = new RandomPhone(RandomPhoneType.Mobile);`
+
+Landline, in a country.
+
+`RandomPhone RandomPhone = new RandomPhone(RandomPhoneType.Land, "Australia");`
+
+Mobile, in a country.
+
+`RandomPhone RandomPhone = new RandomPhone(RandomPhoneType.Mobile, "Australia");`
