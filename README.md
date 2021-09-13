@@ -3,6 +3,9 @@ C# library for generating randomness
 
 I created this library as for one of my projects, I needed to have random "user" data. I plan to add more randomness to this overtime.
 
+Markov capabilities (sentence generator) have been taken from https://github.com/chriscore/MarkovSharp under MIT license.
+Thanks to Chris Core for this work. All the code for Markov is in the Markov folder.
+
 # Current Random information
 
 ## Identities

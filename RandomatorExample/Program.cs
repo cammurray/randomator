@@ -16,7 +16,7 @@ namespace RandomatorExample
 
             Console.WriteLine($"\n Random people \n");
 
-            for(var x = 0; x <= 1; x++) OutputRandomPerson();
+            for(var x = 0; x <= 5; x++) OutputRandomPerson();
 
             /*
 
@@ -54,6 +54,20 @@ namespace RandomatorExample
                 Console.WriteLine(new RandomPhone(RandomPhoneType.Mobile, "Australia").ToString());
             }
 
+            /*
+
+            Random sentences
+
+            */
+
+            Console.WriteLine($"\n Random sentences using markov chain! \n");
+
+            RandomSentence RandomSentence = new RandomSentence();
+
+            for(var x = 0; x <= 5; x++)
+            {
+                Console.WriteLine(RandomSentence.Generate());
+            }
 
         }
 

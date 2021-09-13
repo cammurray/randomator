@@ -3,12 +3,9 @@ using Randomator.Models.Data;
 
 /*
 
-    Contains static data
+    Contains static data, this information could be fetched in a serialized format from JSON too.
 
     International phone prefixes: https://en.wikipedia.org/wiki/List_of_mobile_telephone_prefixes_by_country 
-
-
-
 
 */
 
@@ -28,7 +25,7 @@ namespace Randomator.Data
         // Locations
         public static readonly List<Location> Data = new List<Location>()
         {
-            new Location() 
+            new Location()                                      // Australia
             {
                 Country="Australia",
                 CountryCode="AU",
@@ -90,7 +87,7 @@ namespace Randomator.Data
                     }
                 }
             },
-            new Location()
+            new Location()                                      // USA
             {
                 Country="United States of America",
                 CountryCode="USA",
@@ -102,17 +99,17 @@ namespace Randomator.Data
                         "+1 (%areacode%) ###-####"
                     }
                 },
+                AddressFormat=new string[] {
+                            "%number% %road%",
+                            "%city%, %stateshort% %postzip%",
+                            "%country%"
+                },
                 Cities=new List<LocationCity>(){
                     new LocationCity() {
                         City="Seattle",
                         State="Washington",
                         StateShort="WA",
                         PhoneCode="206",
-                        AddressFormat=new string[] {
-                                    "%number% %road%",
-                                    "%city%, %stateshort% %postzip%",
-                                    "%country%"
-                        },
                         Areas=new List<LocationArea>() {
                             new LocationArea() {
                                 Name="Seattle",
@@ -131,10 +128,30 @@ namespace Randomator.Data
                                 }
                             }
                         }
+                    },
+                    new LocationCity() {
+                        City="New York",
+                        State="New York",
+                        StateShort="NY",
+                        PhoneCode="212",
+                        Areas=new List<LocationArea>() {
+                            new LocationArea() {
+                                Name="New York",
+                                PostZip="10012",
+                                Roads=new string[]{
+                                    "W 3rd Street",
+                                    "Mott Street",
+                                    "5th Avenue",
+                                    "E 42nd Street",
+                                    "W 16th Street",
+                                    "E 6th Street"
+                                }
+                            }
+                        }
                     }
-                }
+                },
             },
-            new Location()
+            new Location()                                      // UK
             {
                 Country="United Kingdom",
                 CountryCode="UK",
@@ -178,7 +195,7 @@ namespace Randomator.Data
                     }
                 }
             },
-            new Location()
+            new Location()                                      // Hungary
             {
                 Country="Hungary",
                 CountryCode="HN",
@@ -218,6 +235,56 @@ namespace Randomator.Data
                                     "Sztehlo Gábor rkp."
                                 }
                             },                    
+                        }
+                    }
+                }
+            },
+            new Location()                                      // France
+            {
+                Country="France",
+                CountryCode="33",
+                PhoneFormat=new PhoneFormat() {
+                    Mobile=new string[] {
+                        "+36 20 ### ####"
+                    },
+                    Land=new string[] {
+                        "+36 %areacode% ### ####"
+                    }
+                },
+                AddressFormat=new string[] {
+                    "%number% %road%",
+                    "%postzip% %city%",
+                    "%country%"
+                },
+                Cities=new List<LocationCity>(){
+                    new LocationCity() {
+                        City="Paris",
+                        PhoneCode="1",
+                        Areas=new List<LocationArea>() {
+                            new LocationArea() {
+                                Name="Paris",
+                                PostZip="75006",
+                                Roads=new string[]{
+                                    "Rue de Seine",
+                                }
+                            },
+                            new LocationArea() {
+                                Name="Paris",
+                                PostZip="75001",
+                                Roads=new string[]{
+                                    "Rue St Honoré",
+                                    "Rue de la Monnaie",
+                                    "Quai du Louvre",
+                                    "Rue des Prêtres Saint-Germain l'Auxerrois"
+                                }
+                            },
+                            new LocationArea() {
+                                Name="Paris",
+                                PostZip="75007",
+                                Roads=new string[]{
+                                    "Quai Voltaire",
+                                }
+                            },                  
                         }
                     }
                 }
