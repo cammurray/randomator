@@ -344,7 +344,46 @@ namespace Randomator.Data
                         }
                     }
                 }
-            },            
+            },
+            new Location()                                      // India
+            {
+                Country="India",
+                CountryCode="IN",
+                NameOrigin=new string[] {
+                    "Indian"
+                },
+                PhoneFormat=new PhoneFormat() {
+                    Mobile=new string[] {
+                        "+91 10### ####",
+                    },
+                    Land=new string[] {
+                        "+91 %areacode% #### ####"
+                    }
+                },
+                AddressFormat=new string[] {
+                    "%number%, %road%",
+                    "%city% %postzip%",
+                    "%country%"
+                },
+                Cities=new List<LocationCity>(){
+                    new LocationCity() {
+                        City="New Delhi",
+                        PhoneCode="11",
+                        Areas=new List<LocationArea>() {
+                            new LocationArea() {
+                                Name="New Delhi",
+                                PostZip="110045",
+                                Roads=new string[]{
+                                    "Shershah Road",
+                                    "Purana Quila Rd",
+                                    "Narwana Rd",
+                                    "Sardar Patel Marg"
+                                }
+                            }               
+                        }
+                    }
+                }
+            },             
         };
 
     }

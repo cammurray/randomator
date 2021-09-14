@@ -107,6 +107,36 @@ namespace Randomator.Data
                     "Ryong"
                 }
             },
+            new NameNationality() {
+                Origin="Indian",
+                Name=new string[] {
+                    "Sarvesh",
+                    "Baliram",
+                    "Hema",
+                    "Bikash",
+                    "Laksmamma",
+                    "Smti",
+                    "Prashant",
+                    "Annapruna",
+                    "Sures",
+                    "Kajal",
+                    "Shravan",
+                    "Saraswati",
+                    "Najma",
+                    "Rajib",
+                    "Santosh",
+                    "Aparna",
+                    "Subrata",
+                    "Gieeta",
+                    "Vinayak",
+                    "Alok",
+                    "Hirabai",
+                    "Dipali",
+                    "Rukmani",
+                    "Abhishek",
+                    "Parvathi"
+                }
+            },
         };
 
         // Lastnames
@@ -195,6 +225,36 @@ namespace Randomator.Data
                     "Byeong-Cheol",
                     "Soo-Yeon",
                     "Young-Min"
+                }
+            },
+            new NameNationality() {
+                Origin="Indian",
+                Name=new string[] {
+                    "Kumar",
+                    "Khedkar",
+                    "Pujar",
+                    "Guha",
+                    "Thakkar",
+                    "Jani",
+                    "Kapur",
+                    "Pravin",
+                    "Swami",
+                    "Bhatra",
+                    "Panda",
+                    "Suresh",
+                    "Gupta",
+                    "Jadej",
+                    "Agarwal",
+                    "Asan",
+                    "Bghat",
+                    "Chopra",
+                    "Dhar",
+                    "Dubashi",
+                    "Haldar",
+                    "Jha",
+                    "Khatri",
+                    "Nagarajan",
+                    "Singh"
                 }
             }
         };

@@ -32,10 +32,8 @@ namespace Randomator
             // Get random origin from this country
             string RandomOrigin = Helpers.RandomElement(this.LocationCountry.NameOrigin);
 
-
-
-            string[] FirstnameCollection = Names.Firstnames.Where(name => name.Origin == RandomOrigin).First().Name;
-            string[] LastnameCollection = Names.Lastnames.Where(name => name.Origin == RandomOrigin).First().Name;
+            string[] FirstnameCollection = Names.Firstnames.Where(name => name.Origin == RandomOrigin).FirstOrDefault().Name;
+            string[] LastnameCollection = Names.Lastnames.Where(name => name.Origin == RandomOrigin).FirstOrDefault().Name;
 
             // If there are none, default to english
             if(FirstnameCollection.Length == 0 || LastnameCollection.Length == 0)
