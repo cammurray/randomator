@@ -29,6 +29,9 @@ namespace Randomator.Data
             {
                 Country="Australia",
                 CountryCode="AU",
+                NameOrigin=new string[] {
+                    "English"
+                },
                 PhoneFormat=new PhoneFormat() {
                     Mobile=new string[] {
                        "+61 4### ### ###"
@@ -91,6 +94,10 @@ namespace Randomator.Data
             {
                 Country="United States of America",
                 CountryCode="USA",
+                NameOrigin=new string[] {
+                    "English",
+                    "Spanish"
+                },
                 PhoneFormat=new PhoneFormat() {
                     Mobile=new string[] {
                         "+1 (%areacode%) ###-###"
@@ -155,6 +162,9 @@ namespace Randomator.Data
             {
                 Country="United Kingdom",
                 CountryCode="UK",
+                NameOrigin=new string[] {
+                    "English"
+                },
                 PhoneFormat=new PhoneFormat() {
                     Mobile=new string[] {
                         "+44 71## ######"
@@ -199,6 +209,9 @@ namespace Randomator.Data
             {
                 Country="Hungary",
                 CountryCode="HN",
+                NameOrigin=new string[] {
+                    "Hungarian"
+                },
                 PhoneFormat=new PhoneFormat() {
                     Mobile=new string[] {
                         "+36 20 ### ####"
@@ -242,7 +255,10 @@ namespace Randomator.Data
             new Location()                                      // France
             {
                 Country="France",
-                CountryCode="33",
+                CountryCode="FR",
+                NameOrigin=new string[] {
+                    "French"
+                },
                 PhoneFormat=new PhoneFormat() {
                     Mobile=new string[] {
                         "+36 20 ### ####"
@@ -288,7 +304,47 @@ namespace Randomator.Data
                         }
                     }
                 }
-            }
+            },
+            new Location()                                      // South Korea
+            {
+                Country="South Korea",
+                CountryCode="KR",
+                NameOrigin=new string[] {
+                    "Korean"
+                },
+                PhoneFormat=new PhoneFormat() {
+                    Mobile=new string[] {
+                        "+82 10 ### ####",
+                        "+82 11 ### ####",
+                    },
+                    Land=new string[] {
+                        "+82 %areacode% ### ####"
+                    }
+                },
+                AddressFormat=new string[] {
+                    "%number% %road%",
+                    "%area%, %city%",
+                    "%country%"
+                },
+                Cities=new List<LocationCity>(){
+                    new LocationCity() {
+                        City="Seoul",
+                        PhoneCode="2",
+                        Areas=new List<LocationArea>() {
+                            new LocationArea() {
+                                Name="Yongsan-gu",
+                                PostZip="043NN",
+                                Roads=new string[]{
+                                    "Huam-dong",
+                                    "Hangangno 2(i)-ga",
+                                    "Hangangno-dong",
+                                    "Seobinggo-ro 51-gil"
+                                }
+                            }               
+                        }
+                    }
+                }
+            },            
         };
 
     }

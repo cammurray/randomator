@@ -9,6 +9,7 @@ namespace Randomator
 
     public class RandomLocation
     {
+        public string Area { get; set; }
 
         public string City { get; set; }
         public string Country { get; set; }
@@ -64,6 +65,7 @@ namespace Randomator
             this.PostZip = this.LocationArea.PostZip;
             this.State = this.LocationCity.State;
             this.StateShort = this.LocationCity.StateShort;
+            this.Area = this.LocationArea.Name;
 
             // create a street address
             this.Address = this.BuildAddress();
@@ -106,6 +108,7 @@ namespace Randomator
 
                 Replaced = Replaced.Replace("%number%", this.StreetNumber.ToString());
                 Replaced = Replaced.Replace("%road%", this.Street);
+                Replaced = Replaced.Replace("%area%", this.Area);
                 Replaced = Replaced.Replace("%city%", this.City);
                 Replaced = Replaced.Replace("%stateshort%", this.StateShort);
                 Replaced = Replaced.Replace("%state%", this.State);

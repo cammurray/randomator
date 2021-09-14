@@ -7,8 +7,7 @@ namespace Randomator
 
     public class RandomPerson
     {
-        public string Firstname { get ; set; }
-        public string Lastname { get; set; }
+        public RandomName Name { get; set; }
 
         public RandomLocation LocationHome { get; set; }
         public RandomLocation LocationWork { get; set; }
@@ -18,15 +17,13 @@ namespace Randomator
 
         public RandomPhone PhoneMobile { get; set; }
 
-        public RandomPerson()
+        public RandomPerson(string Country=null)
         {
-
-            // Names
-            this.Firstname = Helpers.RandomElement(Names.Firstnames);
-            this.Lastname = Helpers.RandomElement(Names.Lastnames);
-
             // Home location 
-            this.LocationHome = new RandomLocation();
+            this.LocationHome = new RandomLocation(Country);
+
+            // Get name
+            this.Name = new RandomName(this.LocationHome.Country);
 
             // Work location, in the same city and country as our home
             this.LocationWork = new RandomLocation(this.LocationHome.Country,this.LocationHome.City);

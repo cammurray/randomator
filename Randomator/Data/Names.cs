@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using Randomator.Models.Data;
 
 namespace Randomator.Data
 {
@@ -12,64 +14,189 @@ namespace Randomator.Data
         */
 
         // Firstnames
-        public static readonly string[] Firstnames = new string[]
+        public static readonly List<NameNationality> Firstnames = new List<NameNationality>()
         {
-            "John",
-            "Sam",
-            "Fred",
-            "Bob",
-            "Roger",
-            "Brian",
-            "Amanda",
-            "Casandra",
-            "Elizabeth",
-            "Liz",
-            "Cam",
-            "Daniel",
-            "Dan",
-            "Cameron",
-            "Alex",
-            "Kristan",
-            "Ileana",
-            "Louise",
-            "Prudence",
-            "Myrta",
-            "Rashad",
-            "Taylor",
-            "Emily",
-            "Anne",
-            "Penny",
-            "Lana",
-            "Wesley",
-            "William"
+            new NameNationality() {
+                Name=new string[] {
+                    "John",
+                    "Sam",
+                    "Fred",
+                    "Bob",
+                    "Roger",
+                    "Brian",
+                    "Amanda",
+                    "Casandra",
+                    "Elizabeth",
+                    "Liz",
+                    "Cam",
+                    "Daniel",
+                    "Dan",
+                    "Cameron",
+                    "Alex",
+                    "Kristan",
+                    "Ileana",
+                    "Louise",
+                    "Prudence",
+                    "Taylor",
+                    "Emily",
+                    "Anne",
+                    "Penny",
+                    "Lana",
+                    "Wesley",
+                    "William"
+                },
+                Origin="English"
+            },
+            new NameNationality() {
+                Name=new string[] {
+                    "Boldizsár",
+                    "Ferenc",
+                    "Patrik",
+                    "Mátyás",
+                    "Levente",
+                    "Mihály",
+                    "György",
+                    "Richárd",
+                    "Dávid",
+                    "Erika",
+                    "Panna",
+                    "Beatrix",
+                    "Ivett",
+                    "Viktória"
+                },
+                Origin="Hungarian"
+            },
+            new NameNationality() {
+                Origin="French",
+                Name=new string[] {
+                    "Violett",
+                    "Griffes",
+                    "Julien",
+                    "Reiner",
+                    "Mote",
+                    "Bleau",
+                    "Fauteux",
+                    "Prieur",
+                    "Eloisa",
+                    "Felicity",
+                    "Lyra",
+                    "Josephine",
+                    "Jullien",
+                    "Herbert",
+                    "Tristan"
+                }
+            },
+            new NameNationality() {
+                Origin="Korean",
+                Name=new string[] {
+                    "Om",
+                    "Sim",
+                    "Chong",
+                    "Muk",
+                    "Nu",
+                    "Kong",
+                    "Hwan",
+                    "Kuk",
+                    "Kan",
+                    "Ch'u",
+                    "Tan",
+                    "Kim",
+                    "Un",
+                    "Ru",
+                    "Hwang",
+                    "Ryong"
+                }
+            },
         };
 
         // Lastnames
-        public static readonly string[] Lastnames = new string[]
+        public static readonly List<NameNationality> Lastnames = new List<NameNationality>()
         {
-            "Smith",
-            "Rodrigues",
-            "Murray",
-            "O'Brian",
-            "Virdee",
-            "Coyne",
-            "Tang",
-            "Hoyle",
-            "Agrawal",
-            "Hasala",
-            "Russell",
-            "Biggs",
-            "Alexander",
-            "Fox",
-            "Gallucci",
-            "Walker",
-            "Smith",
-            "Sharp",
-            "Huckaby",
-            "Costello",
-            "Croteau",
-            "Egan",
-            "Fitzgibbon"
+            new NameNationality() {
+                Name=new string[] {
+                    "Smith",
+                    "Rodrigues",
+                    "Murray",
+                    "O'Brian",
+                    "Virdee",
+                    "Coyne",
+                    "Tang",
+                    "Hoyle",
+                    "Agrawal",
+                    "Hasala",
+                    "Russell",
+                    "Biggs",
+                    "Alexander",
+                    "Fox",
+                    "Gallucci",
+                    "Walker",
+                    "Smith",
+                    "Sharp",
+                    "Huckaby",
+                    "Costello",
+                    "Croteau",
+                    "Egan",
+                    "Fitzgibbon"
+                },
+                Origin="English"
+            },
+            new NameNationality() {
+                Name=new string[] {
+                    "Katona",
+                    "Bogdán",
+                    "Sándor",
+                    "Mátyás",
+                    "Váradi",
+                    "Balázs",
+                    "György",
+                    "Mezei",
+                    "Szekeres",
+                    "Szalai",
+                    "BiIllés",
+                    "Bács",
+                    "Sándor",
+                    "Fehér"
+                },
+                Origin="Hungarian"
+            },
+            new NameNationality() {
+                Origin="French",
+                Name=new string[] {
+                    "Meche",
+                    "Neault",
+                    "Brosseau",
+                    "Reiner",
+                    "Buteau",
+                    "Bleau",
+                    "Fauteux",
+                    "Prieur",
+                    "Fecteau",
+                    "Meunier",
+                    "Cloutier",
+                    "Begnaud",
+                    "Bourgeois"
+                }
+            },
+            new NameNationality() {
+                Origin="Korean",
+                Name=new string[] {
+                    "Ha'un",
+                    "Sun-Ah",
+                    "Min",
+                    "Yoon-Hee",
+                    "Jin-Hee",
+                    "Si-U",
+                    "Hyon-U",
+                    "Chung-Ho",
+                    "Dong-Hyun",
+                    "Seong-Ho",
+                    "Jung-Su",
+                    "Hyun-Seok",
+                    "Byeong-Cheol",
+                    "Soo-Yeon",
+                    "Young-Min"
+                }
+            }
         };
 
     }

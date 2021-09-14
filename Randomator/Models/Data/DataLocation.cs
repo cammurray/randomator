@@ -11,6 +11,7 @@ namespace Randomator.Models.Data
 
         public List<LocationCity> Cities { get; set; }
         public string[] AddressFormat { get; set; }
+        public string[] NameOrigin { get; set; }
     }
 
     public class LocationCity

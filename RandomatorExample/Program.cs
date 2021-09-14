@@ -20,6 +20,16 @@ namespace RandomatorExample
 
             /*
 
+            Random Person
+
+            */
+
+            Console.WriteLine($"\n Random people from Hungary \n");
+
+            for(var x = 0; x <= 5; x++) OutputRandomPerson("Hungary");
+
+            /*
+
             Random Location
 
             */
@@ -71,12 +81,12 @@ namespace RandomatorExample
 
         }
 
-        static void OutputRandomPerson()
+        static void OutputRandomPerson(string Country=null)
         {
-            RandomPerson RandomPerson = new RandomPerson();
+            RandomPerson RandomPerson = new RandomPerson(Country);
 
-            Console.WriteLine($"Firstname: {RandomPerson.Firstname}");
-            Console.WriteLine($"Lastname: {RandomPerson.Lastname}");
+            Console.WriteLine($"Firstname: {RandomPerson.Name.Firstname}");
+            Console.WriteLine($"Lastname: {RandomPerson.Name.Lastname}");
             Console.WriteLine($"Mobile: {RandomPerson.PhoneMobile.ToString()}");
             Console.WriteLine($"Home Address: {RandomPerson.LocationHome.ToString()}");
             Console.WriteLine($"Home Phone: {RandomPerson.PhoneHome.ToString()}");
