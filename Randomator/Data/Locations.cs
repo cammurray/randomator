@@ -137,6 +137,26 @@ namespace Randomator.Data
                         }
                     },
                     new LocationCity() {
+                        City="San Francisco",
+                        State="California",
+                        StateShort="CA",
+                        PhoneCode="415",
+                        Areas=new List<LocationArea>() {
+                            new LocationArea() {
+                                Name="Marina District",
+                                PostZip="94123",
+                                Roads=new string[]{
+                                    "Buchanan Street",
+                                    "Chestnut Street",
+                                    "Lombard Street",
+                                    "Bay Street",
+                                    "Fillmore Street",
+                                    "Union Street"
+                                }
+                            }
+                        }
+                    },
+                    new LocationCity() {
                         City="New York",
                         State="New York",
                         StateShort="NY",
