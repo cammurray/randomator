@@ -29,6 +29,10 @@ Thanks to Chris Core for this work. All the code for Markov is in the Markov fol
 * **Mobile Number** *Mobile phone number that should be in the right format*
 * **Phone Number** *Land line phone number that should be in the right format*
 
+## Misc
+
+* **Random String** *Random string*
+
 # How to use
 
 ## Random Identity

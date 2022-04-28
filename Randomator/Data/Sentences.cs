@@ -3,7 +3,7 @@ using System;
 namespace Randomator.Data
 {
 
-    public static class Sentences
+    internal static class Sentences
     {
 
         /*

@@ -14,7 +14,7 @@ using Randomator.Models.Data;
 namespace Randomator.Data
 {
 
-    public static class Locations
+    internal static class Locations
     {
         /*
 

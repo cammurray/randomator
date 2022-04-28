@@ -5,7 +5,7 @@ using Randomator.Models.Data;
 namespace Randomator.Data
 {
 
-    public static class Names
+    internal static class Names
     {
         /*
 

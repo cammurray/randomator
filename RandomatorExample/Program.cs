@@ -63,6 +63,32 @@ namespace RandomatorExample
             {
                 Console.WriteLine(new RandomPhone(RandomPhoneType.Mobile, "Australia").ToString());
             }
+            
+            /*
+             
+             Random Strings
+            
+            */
+
+            Console.WriteLine($"\n Random strings of 10 characters! \n");
+
+            for(var x = 0; x <= 5; x++)
+            {
+                Console.WriteLine(RandomData.GenerateString(10));
+            }
+            
+            /*
+ 
+            Random Strings of lowercase and uppercase
+
+            */
+
+            Console.WriteLine($"\n Random strings of lower case and uppercase! \n");
+
+            for(var x = 0; x <= 5; x++)
+            {
+                Console.WriteLine(RandomData.GenerateString(10,(RanCharSet.AlphabetLower | RanCharSet.AlphabetUpper)));
+            }
 
             /*
 
