@@ -93,7 +93,7 @@ namespace Randomator.Data
             new Location()                                      // USA
             {
                 Country="United States of America",
-                CountryCode="USA",
+                CountryCode="US",
                 NameOrigin=new string[] {
                     "English",
                     "Spanish"
@@ -181,7 +181,7 @@ namespace Randomator.Data
             new Location()                                      // UK
             {
                 Country="United Kingdom",
-                CountryCode="UK",
+                CountryCode="GB",
                 NameOrigin=new string[] {
                     "English"
                 },
@@ -228,7 +228,7 @@ namespace Randomator.Data
             new Location()                                      // Hungary
             {
                 Country="Hungary",
-                CountryCode="HN",
+                CountryCode="HU",
                 NameOrigin=new string[] {
                     "Hungarian"
                 },
