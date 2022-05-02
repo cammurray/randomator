@@ -13,6 +13,7 @@ namespace Randomator
 
         public string City { get; set; }
         public string Country { get; set; }
+        public string CountryCode { get; set; }
 
         public string[] Address { get; set; }
         public int StreetNumber { get; set; }
@@ -60,6 +61,7 @@ namespace Randomator
 
             this.City = this.LocationCity.City;
             this.Country = this.LocationCountry.Country;
+            this.CountryCode = this.LocationCountry.CountryCode;
             this.StreetNumber = Helpers.RandomNumber(1000);
             this.Street = this.LocationArea.Roads.ElementAt(Helpers.RandomNumber(LocationArea.Roads.Length));
             this.PostZip = this.LocationArea.PostZip;
