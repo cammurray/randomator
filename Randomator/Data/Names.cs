@@ -137,6 +137,32 @@ namespace Randomator.Data
                     "Parvathi"
                 }
             },
+            new NameNationality() {
+                Origin="Spanish",
+                Name=new string[] {
+                    "Sofia",
+                    "Isabella",
+                    "Camila",
+                    "Valentina",
+                    "Valeria",
+                    "Mariana",
+                    "Luciana",
+                    "Daniela",
+                    "Gabriela",
+                    "Martina",
+                    "Santiago",
+                    "Matias",
+                    "Mateo",
+                    "Nicolás",
+                    "Alejandro",
+                    "Diego",
+                    "Subrata",
+                    "Joaquín",
+                    "Felipe",
+                    "Pablo",
+                    "Emilio"
+                }
+            },
         };
 
         // Lastnames
@@ -256,6 +282,22 @@ namespace Randomator.Data
                     "Nagarajan",
                     "Singh"
                 }
+            },
+            new NameNationality() {
+                Name=new string[] {
+                    "Garcia",
+                    "Fernández",
+                    "González",
+                    "Rodríguez",
+                    "López",
+                    "Martínez",
+                    "Sánchez",
+                    "Pérez",
+                    "Gómez",
+                    "Hernández",
+                    "Ramírez"
+                },
+                Origin="Spanish"
             }
         };
 

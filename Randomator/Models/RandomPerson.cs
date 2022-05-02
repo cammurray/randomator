@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Randomator.Data;
+using Randomator.Factories.Role;
 using Randomator.Models.Data;
 
 namespace Randomator
@@ -16,6 +17,8 @@ namespace Randomator
         public RandomPhone PhoneWork { get; set; }
 
         public RandomPhone PhoneMobile { get; set; }
+        
+        public RandomRole Role { get; set; }
 
         public RandomPerson(string Country=null)
         {
@@ -32,6 +35,7 @@ namespace Randomator
             this.PhoneHome = new RandomPhone(RandomPhoneType.Land, this.LocationHome.Country,this.LocationHome.City);
             this.PhoneWork = new RandomPhone(RandomPhoneType.Land, this.LocationHome.Country,this.LocationHome.City);
             this.PhoneMobile = new RandomPhone(RandomPhoneType.Mobile, this.LocationHome.Country,this.LocationHome.City);
+            this.Role = factoryRole.Generate();
 
         }
 

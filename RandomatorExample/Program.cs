@@ -16,7 +16,7 @@ namespace RandomatorExample
 
             Console.WriteLine($"\n Random people \n");
 
-            for(var x = 0; x <= 5; x++) OutputRandomPerson();
+            for(var x = 0; x <= 100; x++) OutputRandomPerson();
 
             /*
 
@@ -113,6 +113,8 @@ namespace RandomatorExample
 
             Console.WriteLine($"Firstname: {RandomPerson.Name.Firstname}");
             Console.WriteLine($"Lastname: {RandomPerson.Name.Lastname}");
+            Console.WriteLine($"Role: {RandomPerson.Role.Name}");
+            Console.WriteLine($"Department: {RandomPerson.Role.Department}");
             Console.WriteLine($"Mobile: {RandomPerson.PhoneMobile.ToString()}");
             Console.WriteLine($"Home Address: {RandomPerson.LocationHome.ToString()}");
             Console.WriteLine($"Home Phone: {RandomPerson.PhoneHome.ToString()}");
