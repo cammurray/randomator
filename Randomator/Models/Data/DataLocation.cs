@@ -5,12 +5,29 @@ namespace Randomator.Models.Data
 
     public class Location
     {
+        /// <summary>
+        /// Country for location
+        /// </summary>
         public string Country { get; set; }
+        /// <summary>
+        /// Two letter country code
+        /// </summary>
         public string CountryCode { get; set; }
+        /// <summary>
+        /// Location sensitive phone format, with # as placeholders for numbers
+        /// </summary>
         public PhoneFormat PhoneFormat { get; set; }
-
+        /// <summary>
+        /// City
+        /// </summary>
         public List<LocationCity> Cities { get; set; }
+        /// <summary>
+        /// Location sensitive address format, with variable placeholders
+        /// </summary>
         public string[] AddressFormat { get; set; }
+        /// <summary>
+        /// Name origins, e.g English, French
+        /// </summary>
         public string[] NameOrigin { get; set; }
     }
 

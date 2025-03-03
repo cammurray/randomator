@@ -1,7 +1,9 @@
 # Randomator
 C# library for generating randomness
 
-I created this library as for one of my projects, I needed to have random "user" data. I plan to add more randomness to this overtime.
+I created this library as for one of my projects, I needed to have random "user" data. There are so many projects like this, but none that appear to provide
+region specific and realistic information, e.g an address that really is Australian, or German, or names that are applicable for the area.
+I plan to add more randomness to this overtime.
 
 Markov capabilities (sentence generator) have been taken from https://github.com/chriscore/MarkovSharp under MIT license.
 Thanks to Chris Core for this work. All the code for Markov is in the Markov folder.

@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Authors>Cam Murray</Authors>
     <Description>A C# Library for generating random identities, locations, phone numbers and sentences.</Description>
-    <LangVersion>10</LangVersion>
+    <LangVersion>11</LangVersion>
   </PropertyGroup>
 
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

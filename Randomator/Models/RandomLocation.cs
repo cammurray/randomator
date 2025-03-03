@@ -2,7 +2,6 @@
 using System.Linq;
 using Randomator.Data;
 using Randomator.Models.Data;
-using System.Threading;
 
 namespace Randomator
 {
@@ -29,41 +28,47 @@ namespace Randomator
         public RandomLocation(string Country=null, string City=null)
         {
             
+            // Validate data is not null
+            if (Locations.Data is null || !Locations.Data.Any())
+                throw new ArgumentException("Locations data is empty or null");
+            
             // Location Country
-            if(Country==null)
+            if(Country is null)
             {
-                this.LocationCountry = Locations.Data.ElementAt(Helpers.RandomNumber(Locations.Data.Count));
+                LocationCountry = Random.Shared.GetItems(Locations.Data.ToArray(), 1).First();
             }
             else
             {
-                this.LocationCountry = Locations.Data.Where(location => location.Country == Country).FirstOrDefault();
+                LocationCountry = Locations.Data.FirstOrDefault(location => location.Country == Country);
 
-                if(this.LocationCountry==null) throw new Exception($"Country does not exist in data set: {Country}");
+                if(LocationCountry is null) 
+                    throw new Exception($"Country does not exist in data set: {Country}");
             }
 
             // Location City
-            if(City==null)
+            if(City is null)
             {
-                this.LocationCity = this.LocationCountry.Cities.ElementAt(Helpers.RandomNumber(this.LocationCountry.Cities.Count));
+                LocationCity = Random.Shared.GetItems(LocationCountry.Cities.ToArray(), 1).First();
             }
             else
             {
 
-                this.LocationCity = this.LocationCountry.Cities.Where(city => city.City == City).FirstOrDefault();
+                LocationCity = LocationCountry.Cities.FirstOrDefault(city => city.City == City);
 
-                if(this.LocationCity==null) throw new Exception($"City does not exist in data set: {City}, {Country}");
+                if(LocationCity is null) 
+                    throw new Exception($"City does not exist in data set: {City}, {Country}");
             }
 
             // Location Area
-            this.LocationArea = this.LocationCity.Areas.ElementAt(Helpers.RandomNumber(this.LocationCity.Areas.Count));
+            LocationArea = Random.Shared.GetItems(LocationCity.Areas.ToArray(), 1).First();
 
             // Location City
 
             this.City = this.LocationCity.City;
             this.Country = this.LocationCountry.Country;
             this.CountryCode = this.LocationCountry.CountryCode;
-            this.StreetNumber = Helpers.RandomNumber(1000);
-            this.Street = this.LocationArea.Roads.ElementAt(Helpers.RandomNumber(LocationArea.Roads.Length));
+            this.StreetNumber = Random.Shared.Next(1000);
+            this.Street = Random.Shared.GetItems(LocationArea.Roads.ToArray(), 1).First();
             this.PostZip = this.LocationArea.PostZip;
             this.State = this.LocationCity.State;
             this.StateShort = this.LocationCity.StateShort;
